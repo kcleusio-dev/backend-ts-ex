@@ -7,7 +7,7 @@ import { makeMockRequest } from "../__mocks__/mockRequest.mock";
 describe("UserController", () => {
   const mockUserService: Partial<UserService> = {
     createUser: jest.fn(),
-    getAllUsers: jest.fn(),
+    // getAllUsers: jest.fn(),
   };
 
   const userController = new UserController(mockUserService as UserService);

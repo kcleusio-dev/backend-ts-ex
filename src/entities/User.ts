@@ -16,7 +16,7 @@ export class User {
   password: string;
 
   constructor(name: string, email: string, password: string) {
-    this.id_user = randomUUID;
+    this.id_user = randomUUID();
     this.name = name;
     this.email = email;
     this.password = password;
