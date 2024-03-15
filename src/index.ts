@@ -1,10 +1,13 @@
+import "reflect-metadata";
 import express, { Request, Response } from "express";
 import { UserController } from "./controller/UserController";
 import { router } from "./routes";
+import { AppDataSource } from "./database";
 
 const userController = new UserController();
-
 const server = express();
+
+
 server.use(express.json());
 server.use(router);
 
